@@ -1,0 +1,49 @@
+@import '../../index.css';
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    min-width: 18px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+}
+
+.checkbox__control {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: background-color 0.4s;
+    cursor: pointer;
+
+}
+
+.checkbox__label {
+    text-align: center;
+    font-weight: var(--font-bold);
+    font-size: var(--font-small-16);
+    cursor: pointer;
+}
+
+.checkbox__label .checkbox__label__link {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox__control {
+    background-color: var(--green);
+}

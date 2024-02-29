@@ -1,0 +1,53 @@
+@import '../../index.css';
+
+
+.feedback-form {
+    max-width: 630px;
+    width: 100%;
+    padding: 18px 20px 24px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+.feedback-form__title {
+    margin-bottom: 50px;
+    padding: 0 28px;
+    text-align: center;
+    font-weight: var(--font-bold);
+    font-size: 30px;
+}
+
+.feedback-form__form {
+    padding: 0 35px;
+}
+
+.feedback-form__form-group:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.feedback-form__form-action {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feedback-form__form-action__form-action, .feedback-form__form-action__confirm {
+    flex: 1;
+}
+
+.feedback-form__form-action__submit {
+    max-width: 240px;
+    padding: 18px 80px;
+    color: var(--white);
+    background-color: var(--green);
+    font-weight: var(--font-bold);
+    font-size: var(--font-small-16);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.feedback-form__form-action__submit:disabled {
+    background-color: var(--gray);
+    cursor: default;
+}

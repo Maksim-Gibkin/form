@@ -1,0 +1,44 @@
+@import '../../index.css';
+
+.list {
+    font-family: var(--main-font);
+    font-weight: var(--font-bold);
+    color: var(--black);
+
+    max-width: 490px;
+    width: 100%;
+}
+
+.list__title {
+    margin-bottom: 20px;
+
+    text-align: center;
+    font-size: var(--font-medium-26);
+}
+
+.list__items {
+    padding-left: 20px
+}
+
+.list__item {
+    margin-bottom: 40px;
+}
+
+.list__item:first-child .list__item-title {
+    margin-bottom: 16px;
+}
+
+.list__item::marker {
+    font-size: var(--font-medium-22);
+}
+
+.list__item-title {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: var(--font-medium-22);
+}
+
+.list__item-description {
+    font-size: var(--font-small-16);
+    line-height: 1.2;
+}

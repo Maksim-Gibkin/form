@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --black: #000;
+    --green: #05ac6a;
+    --white: #fff;
+    --gray: #6f6f6f;
+    --bgc-gray: #e3e3e3;
+    --light-gray: #e3e3e3;
+    --font-bold: 600;
+
+    --font-small-16: 16px;
+    --font-medium-22: 22px;
+    --font-medium-26: 26px;
+    --font-big-32: 32px;
+}

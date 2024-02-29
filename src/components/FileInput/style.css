@@ -1,0 +1,45 @@
+@import '../../index.css';
+
+
+.fileInput {
+    padding: 8px 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fileInput__label {
+    cursor: pointer;
+}
+
+.fileInput--disabled {
+    color: var(--gray);
+}
+
+.fileInput--disabled .fileInput__label {
+    cursor: default;
+}
+
+.fileInput__fileName {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.fileInput__label--green, .fileInput__fileName {
+    color: var(--green);
+}
+
+.fileInput__cancel {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: 18px;
+    background-color: #e05d5d;
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.fileInput__cancel__ico {
+    font-size: 1em;
+    font-weight: var(--font-bold);
+}
+

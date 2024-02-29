@@ -1,0 +1,37 @@
+@import '../../index.css';
+
+.common-input {
+    position: relative;
+    width: 100%;
+}
+
+.common-input__input {
+    background-color: #FFF;
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+    font-weight: var(--font-bold);
+    font-size: var(--font-medium-22);
+    height: 55px;
+    outline: 0;
+    padding: 15px 15px 0;
+    width: 100%;
+}
+
+.common-input__label {
+    background-color: #FFF;
+    font-size: var(--font-medium-22);
+    padding: 5px 17px;
+    pointer-events: none;
+    position: absolute;
+    transition: all 200ms;
+    top: 11px;
+    left: 10px;
+}
+
+.common-input__input:focus + .common-input__label,
+.common-input__input:not(:placeholder-shown) + .common-input__label {
+    top: -18px;
+    left: 10px;
+    color: var(--green);
+    font-size: var(--font-small-16);
+}
